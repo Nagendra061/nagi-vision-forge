@@ -1,13 +1,39 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { ThemeProvider } from "@/components/ThemeProvider";
+import { Navigation } from "@/components/Navigation";
+import { ParticleBackground } from "@/components/ParticleBackground";
+import { HeroSection } from "@/components/sections/HeroSection";
+import { AboutSection } from "@/components/sections/AboutSection";
+import { ResumeSection } from "@/components/sections/ResumeSection";
+import { PortfolioSection } from "@/components/sections/PortfolioSection";
+import { BlogSection } from "@/components/sections/BlogSection";
+import { ContactSection } from "@/components/sections/ContactSection";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <ThemeProvider defaultTheme="dark">
+      <div className="relative">
+        <ParticleBackground />
+        <Navigation />
+        
+        <main>
+          <HeroSection />
+          <AboutSection />
+          <ResumeSection />
+          <PortfolioSection />
+          <BlogSection />
+          <ContactSection />
+        </main>
+
+        {/* Footer */}
+        <footer className="glass border-t border-border/50 py-8">
+          <div className="container mx-auto text-center">
+            <p className="text-sm text-muted-foreground">
+              © 2025 Nagi. Crafted with creativity & code.
+            </p>
+          </div>
+        </footer>
       </div>
-    </div>
+    </ThemeProvider>
   );
 };
 
