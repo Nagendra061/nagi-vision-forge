@@ -1,17 +1,20 @@
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Navigation } from "@/components/Navigation";
 import { ParticleBackground } from "@/components/ParticleBackground";
+import { CustomCursor } from "@/components/CustomCursor";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { ResumeSection } from "@/components/sections/ResumeSection";
 import { PortfolioSection } from "@/components/sections/PortfolioSection";
+import { ShopSection } from "@/components/sections/ShopSection";
 import { BlogSection } from "@/components/sections/BlogSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 
 const Index = () => {
   return (
     <ThemeProvider defaultTheme="dark">
-      <div className="relative">
+      <div className="relative cursor-none">
+        <CustomCursor />
         <ParticleBackground />
         <Navigation />
         
@@ -20,6 +23,7 @@ const Index = () => {
           <AboutSection />
           <ResumeSection />
           <PortfolioSection />
+          <ShopSection />
           <BlogSection />
           <ContactSection />
         </main>

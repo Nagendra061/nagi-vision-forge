@@ -108,15 +108,16 @@ export const PortfolioSection = () => {
           onValueChange={(value) => setActiveTab(value as keyof typeof projects)}
           className="w-full"
         >
-          <TabsList className="grid w-full max-w-md mx-auto grid-cols-3 mb-12 glass">
+          <TabsList className="grid w-full max-w-md mx-auto grid-cols-3 mb-12 glass overflow-x-auto">
             {Object.entries(tabConfig).map(([key, config]) => (
               <TabsTrigger
                 key={key}
                 value={key}
-                className="flex items-center gap-2 capitalize data-[state=active]:bg-accent data-[state=active]:text-accent-foreground"
+                className="flex items-center gap-2 capitalize data-[state=active]:bg-accent data-[state=active]:text-accent-foreground text-xs sm:text-sm whitespace-nowrap"
               >
-                <config.icon className="w-4 h-4" />
-                {key}
+                <config.icon className="w-3 h-3 sm:w-4 sm:h-4" />
+                <span className="hidden sm:inline">{key}</span>
+                <span className="sm:hidden">{key.charAt(0).toUpperCase()}</span>
               </TabsTrigger>
             ))}
           </TabsList>
@@ -140,11 +141,17 @@ export const PortfolioSection = () => {
                       transition={{ delay: index * 0.1 }}
                       className="glass-card group hover:glow-accent transition-smooth overflow-hidden"
                     >
-                      {/* Project Image Placeholder */}
-                      <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 mb-4 rounded-lg flex items-center justify-center">
-                        <span className="text-4xl font-bold text-accent/50">
-                          {project.title.charAt(0)}
-                        </span>
+                      {/* Project Image Preview */}
+                      <div className="relative aspect-video bg-gradient-to-br from-accent/20 to-primary/20 mb-4 rounded-lg overflow-hidden group/img">
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <span className="text-4xl font-bold text-accent/30">
+                            {project.title.charAt(0)}
+                          </span>
+                        </div>
+                        {/* Hover overlay */}
+                        <div className="absolute inset-0 bg-accent/80 opacity-0 group-hover/img:opacity-100 transition-smooth flex items-center justify-center">
+                          <span className="text-white font-semibold">View Project</span>
+                        </div>
                       </div>
 
                       {/* Project Info */}
