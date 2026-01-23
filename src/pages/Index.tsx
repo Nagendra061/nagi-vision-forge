@@ -32,7 +32,7 @@ const Index = () => {
         <footer className="glass border-t border-border/50 py-8">
           <div className="container mx-auto text-center">
             <p className="text-sm text-muted-foreground">
-              © 2025 Nagi. Crafted with creativity & code.
+              © 2025 D Nagendra Varma. Crafted with creativity & code.
             </p>
           </div>
         </footer>

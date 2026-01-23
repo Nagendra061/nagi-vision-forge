@@ -35,7 +35,7 @@ export const Navigation = () => {
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <a href="#home" className="text-2xl font-bold gradient-text">
-          Nagi
+          D Nagendra Varma
         </a>
 
         {/* Desktop Nav */}

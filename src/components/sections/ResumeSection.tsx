@@ -30,7 +30,7 @@ export const ResumeSection = () => {
         >
           {/* Header */}
           <div className="text-center border-b border-border/50 pb-6">
-            <h3 className="text-3xl font-bold mb-2">Nagi</h3>
+            <h3 className="text-3xl font-bold mb-2">D Nagendra Varma</h3>
             <p className="text-lg text-muted-foreground">
               UI/UX Designer & Software Tester
             </p>

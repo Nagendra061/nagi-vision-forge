@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { Button } from "../ui/button";
-import { 
-  SiFigma, 
-  SiAdobephotoshop, 
+import {
+  SiFigma,
+  SiAdobephotoshop,
   SiBlender,
   SiAdobeillustrator,
   SiSketch,
@@ -62,7 +62,7 @@ export const HeroSection = () => {
           >
             <div>
               <h1 className="text-6xl md:text-8xl font-bold mb-4 glow-text">
-                Hi, I'm <span className="gradient-text">Nagi</span>
+                Hi, I'm <span className="gradient-text">D Nagendra Varma</span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground">
                 UI/UX Designer & Software Tester

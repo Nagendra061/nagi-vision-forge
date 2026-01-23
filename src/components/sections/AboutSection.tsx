@@ -31,7 +31,7 @@ export const AboutSection = () => {
             className="space-y-6"
           >
             <p className="text-lg leading-relaxed text-foreground/90">
-              I'm Nagi, a passionate UI/UX designer and software tester with a keen eye for detail
+              I'm D Nagendra Varma, a passionate UI/UX designer and software tester with a keen eye for detail
               and a love for creating seamless digital experiences. With expertise in design tools
               like Figma and Photoshop, and development skills in modern web technologies, I bridge
               the gap between beautiful design and functional implementation.
@@ -73,12 +73,12 @@ export const AboutSection = () => {
               {/* Profile Image Placeholder */}
               <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-accent to-primary overflow-hidden border-4 border-accent/30">
                 <div className="w-full h-full flex items-center justify-center text-6xl font-bold text-white">
-                  N
+                  D
                 </div>
               </div>
 
               <div>
-                <h3 className="text-3xl font-bold gradient-text">Nagi</h3>
+                <h3 className="text-3xl font-bold gradient-text">D Nagendra Varma</h3>
                 <p className="text-lg text-muted-foreground mt-2">
                   UI/UX Designer & Software Tester
                 </p>
