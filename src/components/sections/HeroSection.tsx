@@ -32,27 +32,6 @@ export const HeroSection = () => {
       <div className="relative z-10 text-center space-y-8 px-6">
         {/* Orbiting Icons */}
         <div className="relative w-80 h-80 mx-auto mb-12">
-          {tools.map(({ Icon, delay, isLucide }, index) => (
-            <motion.div
-              key={index}
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: delay + 0.5, duration: 0.6 }}
-            >
-              <div
-                className="orbit"
-                style={{
-                  animationDelay: `${-delay * 3}s`,
-                }}
-              >
-                <div className="glass-card p-4 glow-accent">
-                  <Icon className="w-8 h-8 text-accent" />
-                </div>
-              </div>
-            </motion.div>
-          ))}
-
           {/* Center Text */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}

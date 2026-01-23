@@ -25,26 +25,27 @@ const projects = {
       image: "design-3",
     },
   ],
-  programming: [
-    {
-      title: "Portfolio Website",
-      description: "3D interactive portfolio with React",
-      tools: [SiReact, SiJavascript],
-      image: "code-1",
-    },
-    {
-      title: "Task Management App",
-      description: "Full-stack productivity application",
-      tools: [SiReact, SiPython],
-      image: "code-2",
-    },
-    {
-      title: "API Integration Suite",
-      description: "RESTful API wrapper and SDK",
-      tools: [SiPython, SiJavascript],
-      image: "code-3",
-    },
-  ],
+
+  // programming: [
+  //   {
+  //     title: "Portfolio Website",
+  //     description: "3D interactive portfolio with React",
+  //     tools: [SiReact, SiJavascript],
+  //     image: "code-1",
+  //   },
+  //   {
+  //     title: "Task Management App",
+  //     description: "Full-stack productivity application",
+  //     tools: [SiReact, SiPython],
+  //     image: "code-2",
+  //   },
+  //   {
+  //     title: "API Integration Suite",
+  //     description: "RESTful API wrapper and SDK",
+  //     tools: [SiPython, SiJavascript],
+  //     image: "code-3",
+  //   },
+  // ],
   hobbies: [
     {
       title: "3D Character Design",
@@ -73,11 +74,12 @@ const tabConfig = {
     cursor: "cursor-pen",
     theme: "bg-gradient-to-br from-purple-500/10 to-pink-500/10",
   },
-  programming: {
-    icon: Code2,
-    cursor: "cursor-code",
-    theme: "bg-gradient-to-br from-blue-500/10 to-cyan-500/10",
-  },
+
+  // programming: {
+  //   icon: Code2,
+  //   cursor: "cursor-code",
+  //   theme: "bg-gradient-to-br from-blue-500/10 to-cyan-500/10",
+  // },
   hobbies: {
     icon: Heart,
     cursor: "cursor-default",

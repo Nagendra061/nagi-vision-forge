@@ -45,7 +45,8 @@ export const AboutSection = () => {
             </p>
 
             {/* Social Links */}
-            <div className="flex gap-4 pt-6">
+            {/* Social Links */}
+            {/* <div className="flex gap-4 pt-6">
               {socialLinks.map(({ Icon, href, label }) => (
                 <a
                   key={label}
@@ -58,7 +59,7 @@ export const AboutSection = () => {
                   <Icon className="w-6 h-6 group-hover:text-accent transition-smooth" />
                 </a>
               ))}
-            </div>
+            </div> */}
           </motion.div>
 
           {/* Right - Profile Card */}
