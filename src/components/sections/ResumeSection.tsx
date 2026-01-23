@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { Linkedin, Briefcase, Download, QrCode, Globe } from "lucide-react";
-import { SiFiverr, SiUpwork } from "react-icons/si";
+import { SiFiverr } from "react-icons/si";
 
 const platforms = [
   { name: "LinkedIn", Icon: Linkedin, href: "https://linkedin.com", color: "#0077B5" },
   { name: "Naukri", Icon: Globe, href: "https://naukri.com", color: "#4A90E2" },
   { name: "Fiverr", Icon: SiFiverr, href: "https://fiverr.com", color: "#1DBF73" },
-  { name: "Upwork", Icon: SiUpwork, href: "https://upwork.com", color: "#6FDA44" },
+
 ];
 
 export const ResumeSection = () => {

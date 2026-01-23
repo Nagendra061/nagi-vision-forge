@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Mail, Send, Linkedin, Briefcase } from "lucide-react";
-import { SiFiverr, SiUpwork } from "react-icons/si";
+import { SiFiverr } from "react-icons/si";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
@@ -15,7 +15,7 @@ const socialIcons = [
 const hirePlatforms = [
   { name: "LinkedIn", Icon: Linkedin, href: "https://linkedin.com" },
   { name: "Fiverr", Icon: SiFiverr, href: "https://fiverr.com" },
-  { name: "Upwork", Icon: SiUpwork, href: "https://upwork.com" },
+
 ];
 
 export const ContactSection = () => {
