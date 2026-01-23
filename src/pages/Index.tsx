@@ -6,8 +6,8 @@ import { HeroSection } from "@/components/sections/HeroSection";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { ResumeSection } from "@/components/sections/ResumeSection";
 import { PortfolioSection } from "@/components/sections/PortfolioSection";
-import { ShopSection } from "@/components/sections/ShopSection";
-import { BlogSection } from "@/components/sections/BlogSection";
+// import { ShopSection } from "@/components/sections/ShopSection";
+// import { BlogSection } from "@/components/sections/BlogSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 
 const Index = () => {
@@ -17,14 +17,14 @@ const Index = () => {
         <CustomCursor />
         <ParticleBackground />
         <Navigation />
-        
+
         <main>
           <HeroSection />
           <AboutSection />
           <ResumeSection />
           <PortfolioSection />
-          <ShopSection />
-          <BlogSection />
+          {/* <ShopSection /> */}
+          {/* <BlogSection /> */}
           <ContactSection />
         </main>
 
